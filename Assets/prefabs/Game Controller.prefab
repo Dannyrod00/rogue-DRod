@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69733c7ce121fbc4b9109f5be9427f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collum: 10
+  columns: 10
   rows: 10
   floor: {fileID: 165220, guid: 761df3f98b743264c97c5a293a0c956b, type: 2}
 --- !u!1001 &100100000
