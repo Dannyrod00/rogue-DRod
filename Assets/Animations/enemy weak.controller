@@ -20,14 +20,14 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 0}
---- !u!1102 &110263138
+    m_Controller: {fileID: 9100000}
+--- !u!1102 &110265624
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: enemy-weak-attack
+  m_Name: larramore-idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -39,18 +39,18 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ac25e43595806e34982b94c8656c099f, type: 2}
+  m_Motion: {fileID: 7400000, guid: fb8e600b173d6074fbb78efbbde22c47, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
---- !u!1102 &110275950
+--- !u!1102 &110299524
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: enemy-weak-idle
+  m_Name: larrimore-attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -62,7 +62,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df7793ae456a0524eb88996b7b31a991, type: 2}
+  m_Motion: {fileID: 7400000, guid: e62f22e9a2f311140a7c28711ad7724e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -76,11 +76,11 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 110275950}
-    m_Position: {x: 132, y: 156, z: 0}
+    m_State: {fileID: 110265624}
+    m_Position: {x: 144, y: 144, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 110263138}
-    m_Position: {x: 132, y: 228, z: 0}
+    m_State: {fileID: 110299524}
+    m_Position: {x: 144, y: 204, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -93,4 +93,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 156, y: 84, z: 0}
   m_ExitPosition: {x: 276, y: 24, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 110275950}
+  m_DefaultState: {fileID: 110265624}

@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 1398433791
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2124447663
+    locked: 0
+  - name: food
+    uniqueID: 3207819743
+    locked: 0
+  - name: characters
+    uniqueID: 1461137785
+    locked: 0

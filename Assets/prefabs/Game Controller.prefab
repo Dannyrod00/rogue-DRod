@@ -53,14 +53,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   columns: 10
   rows: 10
-  floor: {fileID: 165220, guid: 761df3f98b743264c97c5a293a0c956b, type: 2}
+  floors:
+  - {fileID: 188186, guid: d9030fdf25262284a8fbf3ba01c169ac, type: 2}
+  - {fileID: 165814, guid: 262e174d760c5c448a720b05438799e6, type: 2}
+  - {fileID: 131696, guid: c265fca60e1dbd146a66b7270dec53bf, type: 2}
+  - {fileID: 123720, guid: d093990e4a636b746a2b84a9204040dc, type: 2}
+  - {fileID: 115180, guid: 7e4c3fc51c4692246896e0eb4d71ef10, type: 2}
+  - {fileID: 103684, guid: 27a1832706d9af344910f6a8b893e039, type: 2}
+  - {fileID: 163180, guid: 35e2e17a224ee6b4bbd12a7bd654aee6, type: 2}
+  - {fileID: 165220, guid: 761df3f98b743264c97c5a293a0c956b, type: 2}
+  outerWalls:
+  - {fileID: 103744, guid: a8912d737c30ee94c873cf2cbb771c10, type: 2}
+  - {fileID: 169196, guid: b6e0be7d03adb55468ab02579a5099bc, type: 2}
+  - {fileID: 164252, guid: d2de34e5465673b4b8b2ad848ae8b89d, type: 2}
+  wallObstacles:
+  - {fileID: 129118, guid: 9daae648d310e624ead544bcdc1c0660, type: 2}
+  - {fileID: 138824, guid: 89ca0641066c58248aa23a500238bd5d, type: 2}
+  - {fileID: 167806, guid: 37e0223d27f16cf4d962b800280c5764, type: 2}
+  - {fileID: 168644, guid: df5f501b00d18354098ae462b2104c35, type: 2}
+  - {fileID: 133404, guid: a3c72fc963db22042aebb656aa1e0791, type: 2}
+  - {fileID: 114458, guid: 85e341a51dfb20c48ba5e0a136b90c25, type: 2}
+  - {fileID: 125090, guid: 81464c363a00ab349ab8321a2abaf5c6, type: 2}
+  - {fileID: 123638, guid: 078665849fdbae64eaf51f1b1cec7d5d, type: 2}
+  foodItems:
+  - {fileID: 198110, guid: d2a71bfed96b0864f8eaebedfb1f81f7, type: 2}
+  - {fileID: 179432, guid: 0fe02d3157acd6f48b8c94f5dc162503, type: 2}
+  enemies:
+  - {fileID: 171962, guid: 483fe1e8b5921c641b7729f0ba7fa778, type: 2}
+  - {fileID: 126346, guid: 14f3f8a970c993e44878a4770f06c5af, type: 2}
+  exit: {fileID: 131728, guid: 58a9c4070a297cf46ae7e89d06416c1a, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: foodItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: foodItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 179432, guid: 0fe02d3157acd6f48b8c94f5dc162503, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181852}
