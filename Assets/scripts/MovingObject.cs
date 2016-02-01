@@ -4,10 +4,10 @@ using System.Collections;
 public class MovingObject : MonoBehaviour {
 
 	private BoxCollider2D boxCollider;
-	private Rigidbody2D rigidBody
+	private Rigidbody2D rigidBody;
 
 
-	void Start () {
+	protected virtual void Start () {
 		boxCollider = GetComponent<BoxCollider2D> ();
 		rigidBody = GetComponent<Rigidbody2D>();
 	
@@ -15,9 +15,9 @@ public class MovingObject : MonoBehaviour {
 
 	protected bool canObjectMove(int xDirection, int yDirection){
 		Vector2 startPosition = rigidBody.position;
-		Vector2 endPosition = startPosition + new Vector2 (int xDirection, int yDirection);
+		Vector2 endPosition = startPosition + new Vector2 (xDirection, yDirection);
 
-		Rigidbody.MovePosition(endPosition);
+		rigidBody.MovePosition(endPosition);
 
 		return true;
 	}

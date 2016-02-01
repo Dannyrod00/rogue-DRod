@@ -83,7 +83,7 @@ public class BoardController : MonoBehaviour {
 		SetRandomObstaclesOnGrid (wallObstacles, 3, 9);
 		SetRandomObstaclesOnGrid (foodItems, 1, 5);
 		SetRandomObstaclesOnGrid (enemies, 2, 5);
-		Instatiate (exit, Vector3 (colums - 2, rows - 2, 0f),Quaternion.identity);
+		Instantiate (exit, new Vector3 (columns - 2, rows - 2, 0f), Quaternion.identity);
 
 	}
 
