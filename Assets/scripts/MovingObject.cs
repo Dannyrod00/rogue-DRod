@@ -3,15 +3,19 @@ using System.Collections;
 
 public class MovingObject : MonoBehaviour {
 
+	public float moveTime = 0.50f;
+
 	private BoxCollider2D boxCollider;
 	private Rigidbody2D rigidBody;
 	private LayerMask collisionLayer;
+	private float inverseMoveTime;
 
 
 	protected virtual void Start () {
 		boxCollider = GetComponent<BoxCollider2D>();
 		rigidBody = GetComponent<Rigidbody2D>();
 		collisionLayer = LayerMask.GetMask("collision Layer");
+		inverseMoveTime = 0.50f / moveTime;
 	
 	}
 
@@ -36,7 +40,7 @@ public class MovingObject : MonoBehaviour {
 
 		do{
 			remainingDistanceToEndPosition = (rigidBody.position - endPosition).sqrMagnitude;
-			Vector2 updatedPosition = Vector2.MoveTowards(rigidBody.position, endPosition, 10f * Time.deltaTime);
+			Vector2 updatedPosition = Vector2.MoveTowards(rigidBody.position, endPosition, inverseMoveTime * Time.deltaTime);
 			rigidBody.MovePosition(updatedPosition);
 			yield return null;
 		}while(remainingDistanceToEndPosition > float.Epsilon);
