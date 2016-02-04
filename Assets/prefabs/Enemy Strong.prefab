@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9567512}
   - 61: {fileID: 6190538}
   - 50: {fileID: 5049448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy Strong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +117,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
