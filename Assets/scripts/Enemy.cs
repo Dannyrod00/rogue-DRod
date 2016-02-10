@@ -7,7 +7,7 @@ public class Enemy : MovingObject {
 
 	protected override void Start () {
 		GameController.Instance.AddEnemyToList (this);
-		player = GameObject.FindGameObjectsWithTag ("Player").transform;
+		player = GameObject.FindGameObjectsWithTag ("Player")transform;
 		base.Start ();
 	}
 
@@ -35,6 +35,7 @@ public class Enemy : MovingObject {
 				} 
 		
 		}
+		canObjectMove (xAxis, yAxis);
 
 	}
 }
